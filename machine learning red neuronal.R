@@ -51,7 +51,7 @@ print(modelrn)
 #comprobando los modelos.
 #infartorl <- predict(modelrl, testset)
 #infartorf <- predict(modelorf, testset)
-infartorn <- compute(modelrn, testset)
+infartorn <- predict.nn(modelrn, testset)
 
 a<-infartorn$net.result
 sino <- ifelse(a>0.5,1,0)
